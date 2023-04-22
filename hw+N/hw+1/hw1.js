@@ -1,4 +1,3 @@
-
 let a = Number (20); //Задание 1
 alert(a);
 

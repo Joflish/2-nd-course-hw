@@ -1,0 +1,100 @@
+@media (max-width: 376px) {
+    .center {
+        padding-left: calc(50% - 343px/2);
+        padding-right: calc(50% - 343px/2);
+    }
+
+    .top {
+        height: 1222px;
+        background: url(img/backtop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            max-width: 325px;
+        }
+        &__subtitle {
+            max-width: 325px;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+        &__button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .main {
+        height: 1222px;
+        background:#000915;;
+        &__game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .game__image {
+        width: 343px;
+        height: 300px;
+        border-radius: 16px;
+        padding-left: 16px;
+        padding-bottom: 32px;
+    }
+
+    .seasons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__item {
+            padding-top: 0;
+            display: flex;
+            align-items: center;
+            padding-right: 0;
+            padding-bottom: 64px;
+        }
+    }
+
+    .title__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #FFFFFF;
+        align-items: center;
+        display: flex;
+    }
+
+    .subtitle__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .seasons__button {
+        width: 234.06px;
+        height: 48.6px;
+    }
+
+    .seasons__picture {
+        padding-top: 64px;
+    }
+
+    .seasons__img {
+        width: 344px;
+        height: 236px;
+    }
+}

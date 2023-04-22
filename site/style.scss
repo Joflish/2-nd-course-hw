@@ -14,7 +14,6 @@ body {
 }
 
 .top{
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%); */
     height: 1024px;
     background: url(img/backtop.jpg);
     background-size: cover;
@@ -45,6 +44,12 @@ body {
     padding-top: 44px;
 }
 
+.top__button_box:hover {
+    background: #9C0332;
+    transform: scale(1.03);
+    box-shadow: 0 0 2px white;
+}
+
 .top__button_box {
     font-style: normal;
     font-weight: 400;
@@ -55,11 +60,24 @@ body {
     height: 48.6px;
     background: #9C0332;
     border-radius: 30px;
+    transition: all .3s;
 }
 
 .main {
     height: 556px;
     background: #000915;
+}
+
+.game__image {
+    transition: all .3s;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    border-radius: 16px;
+}
+
+.game__image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
 }
 
 .main__game {
@@ -116,4 +134,67 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
+
+.seasons {
+    background: #000915;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.seasons__item {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    padding-top: 410px;
+    padding-right: 135px;
+}
+
+.title__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.subtitle__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.seasons__button {
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.seasons__button:hover {
+    background: #9C0332;
+    transform: scale(1.03);
+    box-shadow: 0 0 2px white;
+}
+
+.seasons__picture {
+    padding-top: 233px;
+}
+
+.seasons__img {
+    width: 485px;
+    height: 333px;
+}
+
+@import 'mobile';
 
