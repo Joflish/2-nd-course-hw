@@ -69,3 +69,5 @@ delayForSecond2(() => {
     sayHi('Глеб')
 });
 
+
+
