@@ -144,7 +144,7 @@ getComments();
         return response.json();
       }
     })
-    .then(responseData => {
+    .then(() => {
       comments = comments;
       return getComments()
     })
