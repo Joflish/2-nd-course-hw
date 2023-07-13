@@ -8,30 +8,40 @@
 
   <body>
     <div class="container">
-      <ul class="comments"  id="list">
-        <!-- Разметка рендерится из Js -->
+      <ul id="list" class="comments"> 
+
       </ul>
+           
       <div class="add-form">
-        <input 
-            id="name-input" 
-            value=""
-          type="text" 
+        <input
+          type="text"
           class="add-form-name"
           placeholder="Введите ваше имя"
+          id="name-input"
         />
         <textarea
-          type="textarea" 
-          id="comment-input" 
+          type="text-area"
           class="add-form-text"
           placeholder="Введите ваш коментарий"
           rows="4"
+          id="text-input"
         ></textarea>
         <div class="add-form-row">
-          <button class="add-form-button" id="add-button">Написать</button>
+          <button id="add-button" class="add-form-button">Написать</button>
+          <buttton id="delete-button" class="add-form-delete">Удалить комментарий</buttton>
         </div>
+
       </div>
     </div>
   </body>
+
+  <style>
+    .error{
+      border: 2px solid red; 
+      
+    }
+   
+  </style>
 
   <script>
     "use strict";
@@ -178,11 +188,14 @@ const lastCommentIndex = listElement.innerHTML.lastIndexOf( '<li class="comment"
   }; 
 });
 
+
+
 document.addEventListener("keyup", (event) => {
   if (event.key === "Enter") { 
     buttonElement.click(); 
   }; 
 });
   
+    console.log("It works!");
   </script>
 </html>
