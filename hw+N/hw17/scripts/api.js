@@ -1,7 +1,7 @@
 import { delay } from "./utils.js";
 
 // Изменили апи на 2-ю версию
-const host = "https://webdev-hw-api.vercel.app/api/v2/mielilon";
+const host = "https://webdev-hw-api.vercel.app/api/v2/pyaterikov-matvei";
 const loginHost = "https://webdev-hw-api.vercel.app/api/user/login";
 
 export function fetchComments() {

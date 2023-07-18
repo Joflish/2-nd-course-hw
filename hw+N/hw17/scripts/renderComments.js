@@ -2,6 +2,7 @@ import { postComment } from "./api.js";
 import { renderLogin } from "./renderLogin.js";
 import { sanitizeHtml } from "./utils.js";
 import { delay } from "./utils.js";
+import { capitalize } from '.re';
 
 export const renderComments = (
   app,

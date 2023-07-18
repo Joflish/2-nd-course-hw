@@ -1,6 +1,7 @@
 import { fetchComments, postComment } from "./api.js";
 import { renderComments } from "./renderComments.js";
 import { delay } from "./utils.js";
+import { format } from "date-fns";
 
 // const name = document.getElementById("name-input");
 // const text = document.getElementById("text-input");
