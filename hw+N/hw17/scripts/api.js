@@ -1,17 +1,18 @@
 import { delay } from "./utils.js";
+import { format } from "date-fns";
 
 // Изменили апи на 2-ю версию
 const host = "https://webdev-hw-api.vercel.app/api/v2/pyaterikov-matvei";
 const loginHost = "https://webdev-hw-api.vercel.app/api/user/login";
-
+const createDate = format(date, 'dd/MM/yyyy hh:mm');
 export function fetchComments() {
   return fetch(host + "/comments")
-    .then((res) => res.json())
+    .then((response) => response.json())
     .then((responseData) => {
       const appComments = responseData.comments.map((comment) => {
         return {
           name: comment.author.name,
-          date: new Date(comment.date),
+          date: `${ createDate }`,
           text: comment.text,
           likes: comment.likes,
           isLiked: false,
