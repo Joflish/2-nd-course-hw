@@ -18,7 +18,7 @@ export const renderComments = (
        <li class="comment" data-index="${index}">
          <div class="comment-header">
            <div>${sanitizeHtml(comment.name)}</div>
-           <div>${comment.date.toLocaleDateString()} ${comment.date.toLocaleTimeString()}</div>
+           <div>${format(date, "yyyy-dd-MM hh:mm:ss")}</div>
          </div>
          <div class="comment-body">
            <div class="comment-text">
